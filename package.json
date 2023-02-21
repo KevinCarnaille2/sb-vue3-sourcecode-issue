@@ -1,27 +1,32 @@
 {
-  "name": "sb-vue3-issue-with-sourcecode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sb-vue3-sourcecode-issue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.0-beta.51",
-    "@storybook/addon-interactions": "^7.0.0-beta.51",
-    "@storybook/addon-links": "^7.0.0-beta.51",
-    "@storybook/blocks": "^7.0.0-beta.51",
-    "@storybook/testing-library": "^0.0.14-next.1",
-    "@storybook/vue3": "^7.0.0-beta.51",
-    "@storybook/vue3-vite": "^7.0.0-beta.51",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.0.0-beta.51"
+  "dependencies": {
+    "vue": "^3.2.45"
   },
-  "peerDependencies": {}
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.52",
+    "@storybook/addon-interactions": "^7.0.0-beta.52",
+    "@storybook/addon-links": "^7.0.0-beta.52",
+    "@storybook/blocks": "^7.0.0-alpha.8",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "@storybook/vue3": "^7.0.0-beta.52",
+    "@storybook/vue3-vite": "^7.0.0-beta.52",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "storybook": "^7.0.0-beta.52",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vue-tsc": "^1.0.24"
+  }
 }
